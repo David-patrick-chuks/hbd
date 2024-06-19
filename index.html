@@ -16,6 +16,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background: #3f3a3a;
         }
 
         .card {
@@ -35,21 +36,10 @@
             background-color: #e6f0e6;
         }
 
-        .card .text-container {
-            width: 80%;
-            height: 80%;
-            margin: auto;
-        }
-
         .strikethrough {
             text-decoration: line-through;
         }
 
-        .card .text-container #head {
-            font-family: 'Nobile', sans-serif;
-            font-size: 1.5em;
-            margin: 60px auto 60px auto;
-        }
 
         .card p {
             font-size: 1.1em;
@@ -69,9 +59,10 @@
             border: 10px solid #9612eb;
             backface-visibility: hidden;
             background-color: #9612eb;
-            /* background-image: url($cover-image);
-         */
-            background-size: contain;
+            background-image: url(https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             transform-style: preserve-3d;
             transform-origin: 0% 50%;
             transform: perspective(800px) rotateY(0deg);
@@ -115,20 +106,56 @@
             box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
             border-radius: 5px;
         }
-        h1{
+
+        h1 {
             color: white;
+            background-color: #9612eb;
             text-align: center;
             font-family: 'Nobile';
             font-size: 52px;
             /* background: red; */
 
         }
-        #side{
-            color: rgb(203, 203, 203);
+
+        #head {
+            color: rgb(0, 0, 0);
+            /* text-shadow: 0px 6px 11px black ; */
+            /* background-color: #9612eb; */
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            padding: 18px;
+            /* margin: 60px auto 60px auto; */
+            font-size: 50px;
+        }
+
+        #dami {
+            color: #9612eb;
+            font-size: 90px !important;
+            text-transform: capitalize;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        #side {
+            color: rgb(39, 39, 39);
             text-align: end;
-            font-family: 'Nobile';
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 35px;
             font-style: italic;
+            width: 100%;
+            font-weight: 500;
+            margin-right: 40px;
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            margin: auto;
         }
     </style>
 
@@ -136,19 +163,18 @@
         <div class="back"></div>
         <div class="front">
             <div class="imgset">
-                <img width="100%"
-                    src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
-                <h1>May your Code be bug-free and your projects always deploy smoothly. Cheers to another year of
-                    brilliance 🎉</h1>
-                    <p id="side">..Chuks</p>
+                <h1>Pop the ballon🎈</h1>
             </div>
         </div>
         <div class="text-container">
-            <p id="head">Happy Birthday!</p>
-            <h5>Capt. DamiCodez </h5>
-            <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!
+            <span id="dami">Damicodez,</span>
+            <p id="head">As you celebrate your Birthday, may your path be as dynamic as a React
+                component, as seamless as your state management, and as reliable as your favorite hooks. just like props
+                enhance a component, may this year bring you all the advancements you desire. Keep pushing boundaries in
+                Web Development.
+
             </p>
-            <p>Hope your day goes great!</p>
+            <span id=side>_chuks.dev</span>
 
         </div>
     </div>
